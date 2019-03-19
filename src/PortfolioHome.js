@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import Resume from './Resume.js';
 
 class PortfolioHome extends Component {
     constructor(props) {
         super(props);
-        this.state = {visible: false, move_to_top: false};
+        this.state = {visible: false, move_to_top: false, activeView: null};
     }
 
     render() {
@@ -16,6 +17,8 @@ class PortfolioHome extends Component {
         if(this.state.move_to_top)
             portfolioNameClasses.push("move-to-top");
 
+        const activeViewElem = this.getActiveViewElem();
+
         return (
             <div className="PortfolioHome">
                 <div className={portfolioNameClasses.join(' ')}>
@@ -23,7 +26,9 @@ class PortfolioHome extends Component {
                 </div>
                 <PortfolioNav navItems={navItems} 
                               activateNavView={this.activateNavView.bind(this)} 
-                              moveToTop={this.state.move_to_top} />
+                              moveToTop={this.state.move_to_top}
+                              setActiveNavItem={this.setActiveView.bind(this)} />
+                {activeViewElem}
             </div>
         );
     }
@@ -35,6 +40,19 @@ class PortfolioHome extends Component {
 
     activateNavView() {
         this.setState({move_to_top: true});
+    }
+
+    setActiveView(viewName) {
+        this.setState({activeView: viewName});
+    }
+
+    getActiveViewElem() {
+        console.log(this.state.activeView);
+        if(this.state.activeView == 'Resume')
+        {
+            return <Resume />;
+        }
+        return null;
     }
 }
 
@@ -73,6 +91,7 @@ class PortfolioNav extends Component {
 
     handleNavClick(evt, itemName) {
         this.setState({activeItem: itemName});
+        this.props.setActiveNavItem(itemName);
         this.props.activateNavView();
     }
 }

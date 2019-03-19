@@ -32,7 +32,7 @@ html {
 }
 
 .move-nav {
-    margin-left: 20%;
+    margin-left: 20rem;
     margin-top: -2rem;
     transition: margin-left 1s linear 2s, margin-top 500ms linear 3s !important;
 }
@@ -51,6 +51,19 @@ html {
 .active-nav-item {
     color: gray;
     transition: color 200ms;
+}
+
+.Resume {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    padding-left: 15rem;
+    margin-right: 15rem;
+}
+
+.ResumeItem {
+    margin-left: 2rem;
 }
 
 /* Don't recolor when hovering over active item */
