@@ -1,0 +1,20 @@
+{
+    "Jobs": [
+
+    ],
+    "Education": [
+        {
+            "School": "Stanford University",
+            "Degree": "MS",
+            "Major": "Computer Science",
+            "Specialization": "AI and Computer Systems"
+        },
+        {
+            "School": "Stanford University",
+            "Degree": "BS",
+            "Major": "Management Science and Engineering",
+            "Specialization": "Financial and Decision Analysis"
+        }
+
+    ]
+}

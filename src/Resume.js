@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import resumeJson from './data/resume.json';
 
 class Resume extends Component {
     constructor(props) {
@@ -7,6 +8,8 @@ class Resume extends Component {
     }
 
     render() {
+        console.log(resumeJson);
+
         const workItems = [
             <ResumeItem title={"Software Developer at Gelber Group"} />
         ];
