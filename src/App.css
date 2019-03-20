@@ -66,6 +66,23 @@ html {
     margin-left: 2rem;
 }
 
+.ResumeItem-title {
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+}
+
+.ResumeItem-subtitle {
+    margin-top: 0rem;
+    font-style: italic;
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+}
+
+.ResumeItem-spec {
+    margin-top: 0rem;
+}
+
+
 /* Don't recolor when hovering over active item */
 .active-nav-item:hover {
     color: gray !important;

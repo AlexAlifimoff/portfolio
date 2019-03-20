@@ -5,15 +5,19 @@
     "Education": [
         {
             "School": "Stanford University",
-            "Degree": "MS",
+            "Degree": "Masters",
             "Major": "Computer Science",
-            "Specialization": "AI and Computer Systems"
+            "Specialization": "AI and Computer Systems",
+            "StartYear": 2015,
+            "EndYear": 2017
         },
         {
             "School": "Stanford University",
-            "Degree": "BS",
+            "Degree": "Bachelors",
             "Major": "Management Science and Engineering",
-            "Specialization": "Financial and Decision Analysis"
+            "Specialization": "Financial and Decision Analysis",
+            "StartYear": 2011,
+            "EndYear": 2015
         }
 
     ]
